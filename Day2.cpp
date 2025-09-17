@@ -22,3 +22,19 @@ int main() {
 // Create two integers a and b with any values. Print their sum.
 // Change isStudent to false. What prints?
 
+#include<iostream>
+using namespace std;
+
+int main(){
+    string city = "Mandya";
+    int a=10 , b=5 , sum=0;
+    bool isStudent = false;
+    
+    sum = a+b;
+    
+    cout<<"I live in :"<<city<<endl;
+    cout<<"The sum of a and b is :"<<sum<<endl;
+    cout<<"is Student ??"<<isStudent;
+    
+    return 0;
+}
