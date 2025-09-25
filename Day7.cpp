@@ -65,3 +65,45 @@ int main() {
 
     return 0;
 }
+
+//PRACTICE
+
+// Take a number n and print its multiplication table.
+#include <iostream>
+using namespace std;
+int main() {
+    int n,sum=0;
+    cout<<"Enter a number :"<<endl;
+    cin>>n;
+    if(n>=1){
+    for(int i=1;i<=10;i++){
+        sum=sum+n;
+        cout<<n<<" * "<<i<<" = "<<sum<<endl;
+    }
+    }
+    else{
+        cout<<"Enter positive numbers only";
+    }
+    return 0;
+}
+
+// Print the sum of digits of a number.
+// Example: n=1234 → 1+2+3+4=10.
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, sum = 0;
+    cout << "Enter a number: ";
+    cin >> n;
+
+    while (n > 0) {
+        int digit = n % 10;   // extract last digit
+        sum += digit;         // add digit to sum
+        n = n / 10;           // remove last digit
+    }
+
+    cout << "Sum of digits = " << sum << endl;
+    return 0;
+}
+
